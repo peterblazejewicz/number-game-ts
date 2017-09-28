@@ -1,14 +1,12 @@
-import * as React from 'react';
-import './App.css';
+import './Game.css';
 
-const logo = require('./logo.svg');
+import React from 'react';
 
-class App extends React.Component {
+class Game extends React.Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
@@ -19,4 +17,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Game;
