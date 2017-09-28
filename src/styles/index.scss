@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+div#game {
+  height: 100vh;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+div#target {
+  border: thin solid #888;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem;
+  background-color: #828282;
+}
+
+.number {
+  border: thin solid #888;
+  width: 45%;
+  margin: 2%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 1em;
+  background-color: #cecccc;
+}
+
+div#time {
+  width: 50%;
+  display: inline-block;
+}
+
+div#score {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}

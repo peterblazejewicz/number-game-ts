@@ -9,15 +9,20 @@
     "react-scripts-ts": "2.7.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "build:css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build": "npm run build:css && react-scripts-ts build",
+    "eject": "react-scripts-ts eject",
+    "start:ts": "react-scripts-ts start",
+    "start": "npm-run-all -p watch:css start:ts",
     "test": "react-scripts-ts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
-    "eject": "react-scripts-ts eject"
+    "watch:css": "npm run build:css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
   },
   "devDependencies": {
     "@types/jest": "^21.1.1",
     "@types/node": "^8.0.31",
     "@types/react": "^16.0.7",
-    "@types/react-dom": "^15.5.5"
+    "@types/react-dom": "^15.5.5",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.1"
   }
 }

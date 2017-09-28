@@ -1,4 +1,4 @@
-import './index.css';
+import './styles/index.css';
 
 import Game from './components/Game';
 import React from 'react';
